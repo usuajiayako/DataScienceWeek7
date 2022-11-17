@@ -42,7 +42,7 @@ accuracy = accuracy_score(testy , predictions)
 
 ## CREATE CONFUSION MATRIX
 CM = confusion_matrix(testy , predictions)
-sn.heatmap(pd.DataFrame(CM), annot=True)
+sns.heatmap(pd.DataFrame(CM), annot=True)
 
 TN, FP, FN, TP = CM.ravel() # students do not need to do this, but good for you to have if they ask
 

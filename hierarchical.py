@@ -25,3 +25,4 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 
 plt.figure()
 dendrogram(linkage(x,'single'), labels=range(0,7))
+plt.show()
